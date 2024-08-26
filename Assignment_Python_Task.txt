@@ -1,0 +1,25 @@
+Task 1 
+Suppose you are the owner of a grocery shop. So, make a dictionary of items and their prices present in your shop, to track for your internal purpose. 
+
+
+d = {chips: 50, snacks: 80, chocolate: 50} and so on
+Now ask the user one by one what all the things he/she wants to buy. Ask at each iteration if the user wants to add more items to his cart. If yes, show all the options present and ask them to type one of them. Also ask the quantity how much they want to buy in the whole number like1,2,3, etc. 
+
+
+If the users type no, Calculate the total amount and display what all items have been added into their bill and amount for each item along with the total billing amount. 
+
+
+Also handle the situation, for if the user selects a wrong item not present in the list display the message Wrong Item Selected and ask for input again.
+
+
+The flow should go something like this:
+
+Task 2
+
+Create a function in Python to take two lists as parameters and add the elements consecutively. 
+Eg: 
+Input:
+L1 = [1,2,3,4,5]
+L2 = [2,3,4,5,6]
+Output: 
+[3,5,7,9,11]

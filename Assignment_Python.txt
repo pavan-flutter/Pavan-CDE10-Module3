@@ -1,0 +1,72 @@
+Task 1
+
+print("Welcome to our store......")
+prod_dict = {'chips':50, 'snacks':80, 'chocolate':50}
+pur_dict =  {'chips':0, 'snacks':0, 'chocolate':0}
+tot = 0
+print("Here is the list of products we have in the store: ",prod_dict.keys())
+#ip = input("Enter the item you want to buy:")
+#qnt = int(input("Enter the Quantity you want to buy:"))
+ch='y'
+while (ch == 'y'):
+    ip = input("Enter the item you want to buy:")
+    qnt = int(input("Enter the Quantity you want to buy:"))
+    if ip in prod_dict:
+        ch = input("Do you wish to continue and buy more products? y/n:")
+        pur_dict[ip]=qnt
+        if(ch == 'y'):            
+            print("Here is the list of products we have in the store: ",prod_dict.keys())
+        elif(ch =='n'):
+            print("Thank you for visting Store")
+        else:
+            print("Thank you for visting Store")
+        continue
+    else:
+        print("Wrong item Selected")
+        ch = input("Do you wish to continue and buy more products? y/n:")
+        continue
+
+
+    
+    
+    
+print("Items   Qty  PerUnitPrice  Amt", end=' ') 
+print()
+
+for i in pur_dict.keys():         
+        if(pur_dict[i] > 0):
+            multiple = prod_dict[i] * pur_dict[i]
+            tot += multiple
+            print(i,'  ' ,pur_dict[i],'       ' ,prod_dict[i],'     ' ,multiple, end=' ')
+            print()
+
+            
+print()
+print("Your Total Amount is :", tot)
+
+
+list_of_tuples = [(k, v) for k, v in pur_dict.items()]
+print(list_of_tuples)
+
+print(pur_dict.items())
+    
+    
+
+
+
+Task 2 
+
+#Add two List function 
+
+def addlist(a,b):
+    L3 =[]
+    if(len(a) == len(a)):
+        for i in range(0,len(a)):
+            L3.append(a[i] + b[i])
+        return L3
+
+a = [1,2,3,4,5]
+b = [2,3,4,5,6]
+
+L3 = addlist(a,b)
+print(L3)
